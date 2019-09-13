@@ -131,6 +131,9 @@ from sonnet.python.modules.gated_rnn import lstm_with_zoneout
 from sonnet.python.modules.gated_rnn import LSTMBlockCell
 from sonnet.python.modules.gated_rnn import LSTMState
 from sonnet.python.modules.layer_norm import LayerNorm
+from sonnet.python.modules.moving_average import MovingAverage
+from sonnet.python.modules.optimization_constraints import get_lagrange_multiplier
+from sonnet.python.modules.optimization_constraints import OptimizationConstraints
 from sonnet.python.modules.pondering_rnn import ACTCore
 from sonnet.python.modules.relational_memory import RelationalMemory
 from sonnet.python.modules.residual import Residual
@@ -145,6 +148,7 @@ from sonnet.python.modules.sequential import Sequential
 from sonnet.python.modules.spatial_transformer import AffineGridWarper
 from sonnet.python.modules.spatial_transformer import AffineWarpConstraints
 from sonnet.python.modules.spatial_transformer import GridWarper
+from sonnet.python.modules.spectral_normalization import wrap_with_spectral_norm
 from sonnet.python.modules.util import check_initializers
 from sonnet.python.modules.util import check_partitioners
 from sonnet.python.modules.util import check_regularizers
@@ -169,5 +173,5 @@ from sonnet.python.ops import nest
 from sonnet.python.ops.initializers import restore_initializer
 
 
-__version__ = '1.33'
+__version__ = '1.35'
 
